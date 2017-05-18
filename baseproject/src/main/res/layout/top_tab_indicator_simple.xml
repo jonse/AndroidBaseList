@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/page_edge_padding_small2"
+    android:paddingRight="@dimen/page_edge_padding_small2">
+
+    <TextView
+        android:id="@android:id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:background="@drawable/my_activity_tab_background"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/top_tab_text2"
+        android:textSize="16dp" />
+
+</LinearLayout>

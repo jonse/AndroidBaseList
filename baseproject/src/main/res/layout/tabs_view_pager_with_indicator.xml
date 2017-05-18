@@ -1,0 +1,78 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.yingdi.baseproject.base.DjHorizontalScrollView
+            android:id="@+id/tabs_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bar_height_middle"
+            android:background="#fff"
+            android:fadingEdgeLength="0dp"
+            android:overScrollMode="never"
+            android:requiresFadingEdge="horizontal"
+            android:scrollbars="none">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bar_height_middle"
+                    android:orientation="horizontal"
+                    android:showDividers="none" />
+
+                <View
+                    android:id="@+id/tab_select_indicator"
+                    android:layout_width="40dp"
+                    android:layout_height="@dimen/top_tab_select_indicator_height"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/element_margin_extra_large"
+                    android:background="@color/text_selected_red"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+        </com.yingdi.baseproject.base.DjHorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ededed" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <com.yingdi.baseproject.base.NoCacheViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/mask_left"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/bar_height_middle"
+        android:layout_gravity="left"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_mask_main_top_left"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/mask_right"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/bar_height_middle"
+        android:layout_gravity="right"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_mask_main_page_top" />
+
+</TabHost>

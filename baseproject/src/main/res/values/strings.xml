@@ -1,0 +1,12 @@
+<resources>
+    <string name="exit_app">再点一次退出</string>
+    <string name="load_state_no_data">暂无内容</string>
+    <string name="load_state_failed">您网络不太给力，请刷新重试</string>
+    <string name="unload">加载失败，点击重新加载</string>
+    <string name="load_state_ing">正在加载</string>
+    <string name="refresh_header_pull_refresh">下拉刷新</string>
+    <string name="refresh_header_release_refresh">松开刷新</string>
+    <string name="refresh_header_last_update">上次刷新：%s</string>
+    <string name="refresh_header_refreshing">加载中...</string>
+    <string name="refresh_header_refresh_complete">刷新完成</string>
+</resources>
